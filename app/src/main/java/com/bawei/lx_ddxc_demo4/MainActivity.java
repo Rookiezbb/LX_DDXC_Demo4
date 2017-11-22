@@ -68,6 +68,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View arg0) {
                 // TODO Auto-generated method stub
                 mDownloadUtil.start();
+
             }
         });
         pause.setOnClickListener(new View.OnClickListener() {
@@ -76,6 +77,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View arg0) {
                 // TODO Auto-generated method stub
                 mDownloadUtil.pause();
+                Toast.makeText(MainActivity.this, "下载已暂停", Toast.LENGTH_SHORT).show();
             }
         });
 
